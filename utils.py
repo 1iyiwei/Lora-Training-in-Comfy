@@ -58,7 +58,7 @@ class color:
 
 def read_config(param):
     #read config.json
-    config_file = os.path.join(folder_paths.get_folder_paths("custom_nodes")[0],"Lora-Training-in-Comfy","config.json")
+    config_file = os.path.join(os.path.dirname(os.path.realpath(__file__)),"config.json")
     #get python path from config.json
     # check if the file exists
     if not os.path.isfile(config_file):
